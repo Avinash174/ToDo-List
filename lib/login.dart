@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:todo_list/signup.dart';
 
 class LogInScreen extends StatelessWidget {
   const LogInScreen({super.key});
@@ -13,9 +14,14 @@ class LogInScreen extends StatelessWidget {
       body: Center(
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
-          children: [ElevatedButton(onPressed: () {
-            
-          }, child: Text('Press Me'))],
+          children: [
+            ElevatedButton(
+                onPressed: () {
+                  Navigator.push(context,
+                      MaterialPageRoute(builder: (_) => const SignUpScreen()));
+                },
+                child: const Text('Press Me'))
+          ],
         ),
       ),
     );
