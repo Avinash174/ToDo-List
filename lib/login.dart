@@ -7,8 +7,16 @@ class LogInScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('Log In'),
+        title: const Text('Log In'),
         centerTitle: true,
+      ),
+      body: Center(
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          children: [ElevatedButton(onPressed: () {
+            
+          }, child: Text('Press Me'))],
+        ),
       ),
     );
   }
